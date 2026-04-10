@@ -42,6 +42,7 @@ public class TasksController : ControllerBase
 
     return Ok(result);
   }
+
   [HttpGet("{id}")]
   public ActionResult<TaskItem> GetById(int id)
   {
@@ -50,6 +51,7 @@ public class TasksController : ControllerBase
       return NotFound(new { Message = $"Задача с id={id} не найдена" });
     return Ok(task);
   }
+
   [HttpPost]
   public ActionResult<TaskItem> Create([FromBody] CreateTaskDto dto)
   {
@@ -67,6 +69,7 @@ public class TasksController : ControllerBase
     _tasks.Add(newTask);
     return CreatedAtAction(nameof(GetById), new { id = newTask.Id }, newTask);
   }
+
   [HttpPut("{id}")]
   public ActionResult<TaskItem> Update(int id, [FromBody] UpdateTaskDto dto)
   {
@@ -85,6 +88,7 @@ public class TasksController : ControllerBase
 
     return Ok(task);
   }
+
   [HttpDelete("{id}")]
   public ActionResult Delete(int id)
   {
@@ -103,6 +107,7 @@ public class TasksController : ControllerBase
     task.IsCompleted = !task.IsCompleted;
     return Ok(task);
   }
+
   [HttpGet("search")]
   public ActionResult<IEnumerable<TaskItem>> Search([FromQuery] string query) {
     if (string.IsNullOrWhiteSpace(query))
@@ -156,7 +161,7 @@ public class TasksController : ControllerBase
       "title" => _tasks.OrderBy(t => t.Title),
       "priority" => _tasks.OrderBy(t => t.Priority),
       "createdat" => _tasks.OrderBy(t => t.CreatedAt),
-      _ => _tasks.OrderBy(t => t.Id),  // по умолчанию - по id
+      _ => _tasks.OrderBy(t => t.Id),
     };
       
     if (desc)
