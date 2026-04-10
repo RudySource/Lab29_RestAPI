@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "FlSnKh42aLQ=",
+  "success": true,
+  "projectFilePath": "/Users/rudymercy/Documents/Lab29_RestAPI/TaskApi/TaskApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/rudymercy/.nuget/packages/microsoft.aspnetcore.openapi/9.0.8/microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "/Users/rudymercy/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/rudymercy/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/Users/rudymercy/.nuget/packages/swashbuckle.aspnetcore/6.6.1/swashbuckle.aspnetcore.6.6.1.nupkg.sha512",
+    "/Users/rudymercy/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.1/swashbuckle.aspnetcore.swagger.6.6.1.nupkg.sha512",
+    "/Users/rudymercy/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.1/swashbuckle.aspnetcore.swaggergen.6.6.1.nupkg.sha512",
+    "/Users/rudymercy/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.1/swashbuckle.aspnetcore.swaggerui.6.6.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "TaskApi зависит от Swashbuckle.AspNetCore (>= 6.6.0), но версия Swashbuckle.AspNetCore 6.6.0 не найдена. Использовалась версия Swashbuckle.AspNetCore 6.6.1.",
+      "projectPath": "/Users/rudymercy/Documents/Lab29_RestAPI/TaskApi/TaskApi.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/rudymercy/Documents/Lab29_RestAPI/TaskApi/TaskApi.csproj",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}
