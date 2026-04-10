@@ -33,3 +33,4 @@
 /Users/rudymercy/Documents/Lab29_RestAPI/TaskApi/obj/Debug/net9.0/TaskApi.pdb
 /Users/rudymercy/Documents/Lab29_RestAPI/TaskApi/obj/Debug/net9.0/TaskApi.genruntimeconfig.cache
 /Users/rudymercy/Documents/Lab29_RestAPI/TaskApi/obj/Debug/net9.0/ref/TaskApi.dll
+/Users/rudymercy/Documents/Lab29_RestAPI/TaskApi/obj/Debug/net9.0/TaskApi.sourcelink.json
