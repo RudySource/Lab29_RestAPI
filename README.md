@@ -35,6 +35,9 @@ Lab29_RestAPI/
 └── README.md
 ```
 
+> [!WARNING]
+> При использовании REST CLIENT - `в requests.http` нужно изменить ip & port `@baseUrl`
+
 ## Список маршрутов
 
 | Метод  | URL                         | Описание              |
